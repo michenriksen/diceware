@@ -1,0 +1,122 @@
+body, .modal-content {
+	background-color: rgb(27, 27, 36);
+	color: #fff;
+}
+
+a {
+	color: rgb(124, 118, 184);
+}
+
+code {
+	background-color: inherit;
+}
+
+.btn {
+	background-color: rgb(27, 27, 36);
+	border: 1px solid rgb(121, 123, 137);
+	color: rgb(121, 123, 137);
+}
+
+.btn:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+footer {
+	color: rgb(121, 123, 137);
+	font-size: 11px;
+}
+
+.progress {
+	background-color: rgb(121, 123, 137);
+}
+
+.progress-bar {
+	background-color: rgb(70, 67, 104);
+}
+
+.seeder {
+	text-align: center;
+	margin-top: 100px;
+	color: rgb(121, 123, 137);
+}
+
+.passphrase {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.passphrase .word {
+	color: #fff;
+	font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+	font-size: 28px;
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	margin-right: 10px;
+}
+
+.passphrase .word .word-color {
+	display: block;
+	height: 5px;
+	background-color: red;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+.passphrase .word .word-number {
+	font-size: 11px;
+	color: rgb(122, 122, 138);
+}
+
+.passphrase .word .word-dice {
+	display: block;
+	font-size: 31px;
+	color: rgb(122, 122, 138);
+}
+
+#passphrase_container {
+	display: none;
+}
+
+#new_passphrase {
+	display: block;
+	margin: 100px auto auto auto;
+}
+
+#about {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.modal-content button:hover {
+	color: #fff;
+	background-color: inherit;
+}
+
+.modal-content button.close {
+	border: none;
+}
+
+.modal-header, .modal-footer, hr {
+	border-color: rgb(121, 123, 137);
+}
+
+.modal-body {
+	color: rgb(121, 123, 137);
+}
+
+.noscript {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(27, 27, 36);
+	text-align: center;
+	color: rgb(122, 122, 138);
+	padding-top: 20%;
+}

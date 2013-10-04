@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Generate secure passphrases with the Diceware method">
+	<meta name="author" content="Michael Henriksen">
+	<title>Diceware Passphrase Generator</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/application.css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="seeder" class="seeder">
+			<p>Move your cursor around to seed the random number generator...</p>
+			<div class="progress">
+  			<div class="progress-bar" id="seed_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+  				<span class="sr-only">0% seeded</span>
+  			</div>
+			</div>
+		</div>
+
+		<div id="passphrase_container">
+			<div id="passphrase" class="passphrase"></div>
+
+			<button type="button" id="new_passphrase" class="btn">New Passphrase</button>
+		</div>
+	</div>
+
+	<footer>
+		<div id="about">
+			Created by <a href="https://twitter.com/michenriksen">Michael Henriksen</a> &middot;
+			<a data-toggle="modal" href="#what_is_this">What is this?</a>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="what_is_this" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">What is this?</h4>
+        </div>
+        <div class="modal-body">
+          <p>A simple passphrase generator that uses the <a href="https://en.wikipedia.org/wiki/Diceware">Diceware</a> method to generate secure passphrases.</p>
+
+          <hr />
+
+          <h4>Why is it collecting my mouse movements?</h4>
+
+          <p>The app is using the <a href="https://github.com/davidbau/seedrandom">seedrandom.js</a> library to strengthen the pseudo-random number generator by seeding it with mouse coordinates and other sources of entropy. If you use a modern browser, it will
+          use the much more secure <code>window.crypto</code> as its random number source.</p>
+
+          <hr />
+
+          <h4>Thanks</h4>
+
+          <p>Thanks to <a href="https://twitter.com/thegrugq">the grugq</a> for inspiration,
+             <a href="http://davidbau.com/">David Bau</a> for seedrandom.js
+             and <a href="http://world.std.com/~reinhold/diceware.html">Arnold G. Reinhold</a> for the Diceware word list.</p>
+
+          <hr />
+
+          <h4>Disclaimer</h4>
+
+          <p>diceware.herokuapp.com and its authors are not responsible for any loss of data or personal information. Passphrases are used at the user’s own risk and no liability will be asumed. By using this website, you agree that the website and its authors are not liable for any losses incurred. diceware.herokuapp.com and its authors are not responsible or liable, directly or indirectly, for any damage or loss caused by or in connection with the use of, or reliance on, any such content, goods or services available on or through this website.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <noscript>
+  	<div class="noscript">
+  		<h1>Sorry, this site requires Javascript.</h1>
+  		<div style="font-size: 56px;">&#9856; &#9857; &#9858; &#9859; &#9860; &#9861;</div>
+  	</div>
+ 	</noscript>
+
+	<script src="//code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="/assets/seedrandom.js" type="text/javascript"></script>
+	<script src="/assets/application.js" type="text/javascript"></script>
+</body>
+</html>
