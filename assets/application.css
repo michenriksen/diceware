@@ -52,7 +52,7 @@ footer {
 	font-size: 28px;
 	text-align: center;
 	display: inline-block;
-	width: 200px;
+	width: 120px;
 	margin-right: 10px;
 }
 
@@ -71,7 +71,7 @@ footer {
 
 .passphrase .word .word-dice {
 	display: block;
-	font-size: 31px;
+	font-size: 21px;
 	color: rgb(122, 122, 138);
 }
 
@@ -80,8 +80,12 @@ footer {
 }
 
 #new_passphrase {
-	display: block;
-	margin: 100px auto auto auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#new_passphrase .btn {
+	width: auto;
 }
 
 #about {

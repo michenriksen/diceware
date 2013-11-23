@@ -7845,11 +7845,9 @@ window.WordDispenser = {
 }
 
 window.Passphrase = {
-	wordCount: 5,
-
-	generate: function() {
+	generate: function(wordCount) {
 		this.reset();
-		for (var i = 0; i < this.wordCount; i++) {
+		for (var i = 0; i < wordCount; i++) {
 			var word = WordDispenser.getWord();
 			$("#passphrase").append("<span class='word'>" + word.word + "<span class='word-color' style='background-color:#" + word.hexColor() + "'></span><span class='word-dice'>" + word.dice() + "</span><span class='word-number'>" + word.number + "</span></span>");
 		}
@@ -7875,14 +7873,15 @@ $(document).ready(function() {
 			$('html').unbind('mousemove');
 			$("#seeder").fadeOut('fast', function() {
 				$(this).remove();
-				Passphrase.generate();
+				Passphrase.generate(6);
 				$("#passphrase_container").fadeIn('fast');
 			})
 		}
 	});
 
-	$("#new_passphrase").on('click', function(e) {
+	$("#new_passphrase .btn").on('click', function(e) {
 		e.preventDefault();
-		Passphrase.generate();
+        var wordCount = parseInt($(this).attr('data-word-count'));
+		Passphrase.generate(wordCount);
 	});
 });
