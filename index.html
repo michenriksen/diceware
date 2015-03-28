@@ -7,15 +7,18 @@
 	<meta name="author" content="Michael Henriksen">
 	<title>Diceware Passphrase Generator</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/assets/application.css">
+    <link rel="stylesheet" href="/assets/jquery.mobile.structure-1.4.5.min.css">	
+    <link rel="stylesheet" href="/assets/application.css">  
+
 </head>
 
 <body>
+  <div class="wrapper">
 	<div class="container">
 		<div id="seeder" class="seeder">
-			<p>Move your cursor around to seed the random number generator...</p>
+			<p>Move your cursor or finger around to seed the random number generator...</p>
 			<div class="progress">
-  			<div class="progress-bar" id="seed_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+  			<div class="progress-bar" id="seed_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
   				<span class="sr-only">0% seeded</span>
   			</div>
 			</div>
@@ -40,7 +43,7 @@
 			<a data-toggle="modal" href="#what_is_this">What is this?</a>
 		</div>
 	</footer>
-
+</div>
 	<div class="modal fade" id="what_is_this" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -88,13 +91,15 @@
   <noscript>
   	<div class="noscript">
   		<h1>Sorry, this site requires Javascript.</h1>
-  		<div style="font-size: 56px;">&#9856; &#9857; &#9858; &#9859; &#9860; &#9861;</div>
+  		<div>&#9856; &#9857; &#9858; &#9859; &#9860; &#9861;</div>
   	</div>
  	</noscript>
-
+  
 	<script src="//code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="/assets/seedrandom.js" type="text/javascript"></script>
 	<script src="/assets/application.js" type="text/javascript"></script>
+
 </body>
 </html>

@@ -1,6 +1,12 @@
 body, .modal-content {
 	background-color: rgb(27, 27, 36);
 	color: #fff;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
 }
 
 a {
@@ -25,6 +31,13 @@ code {
 footer {
 	color: rgb(121, 123, 137);
 	font-size: 11px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    height: 3.5rem;
+    text-align: center;
 }
 
 .progress {
@@ -33,6 +46,7 @@ footer {
 
 .progress-bar {
 	background-color: rgb(70, 67, 104);
+    width: 0%;
 }
 
 .seeder {
@@ -42,7 +56,7 @@ footer {
 }
 
 .passphrase {
-	margin-top: 100px;
+	margin-top: 10%;
 	text-align: center;
 }
 
@@ -80,7 +94,8 @@ footer {
 }
 
 #new_passphrase {
-	margin-top: 100px;
+	margin-top: 10%;
+    margin-bottom: 10%;
 	text-align: center;
 }
 
@@ -88,10 +103,7 @@ footer {
 	width: auto;
 }
 
-#about {
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
+#about { 
 }
 
 .modal-content button:hover {
@@ -123,4 +135,5 @@ footer {
 	text-align: center;
 	color: rgb(122, 122, 138);
 	padding-top: 20%;
+    font-size: 56px;
 }
