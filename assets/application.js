@@ -7859,7 +7859,7 @@ window.Passphrase = {
 }
 
 $(document).ready(function() {
-	$('html').on('mousemove', function(e) {
+	$('html').on('vmousemove', function(e) {
 		var seed = [e.pageX, e.pageY, +new Date];
 		Seeder.push(seed);
 
